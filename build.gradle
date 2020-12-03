@@ -285,6 +285,10 @@ dependencies {
     testImplementation "com.tngtech.archunit:archunit-junit5-api:${archunit_junit5_version}"
     testRuntimeOnly "com.tngtech.archunit:archunit-junit5-engine:${archunit_junit5_version}"
     testImplementation "com.h2database:h2"
+    compile group: 'org.keycloak', name: 'keycloak-admin-client', version: '11.0.3'
+    compile group: 'org.jboss.resteasy', name: 'resteasy-jaxrs', version: '2.3.0.GA'
+    compile group: 'org.jboss.resteasy', name: 'resteasy-jackson2-provider', version: '3.0.6.Final'
+   // compile group: 'org.liquibase', name: 'liquibase-gradle-plugin', version: '1.1.0'
     //jhipster-needle-gradle-dependency - JHipster will add additional dependencies here
 }
 

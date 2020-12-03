@@ -65,9 +65,8 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     @Override
     public void configure(HttpSecurity http) throws Exception {
         // @formatter:off
-        http
-            .csrf()
-            .csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse())
+        http.csrf()
+           .csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse())
         .and()
             .addFilterBefore(corsFilter, CsrfFilter.class)
             .exceptionHandling()

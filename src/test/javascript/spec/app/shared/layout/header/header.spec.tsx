@@ -6,7 +6,7 @@ import sinon from 'sinon';
 import LoadingBar from 'react-redux-loading-bar';
 import { Navbar, Nav } from 'reactstrap';
 
-import { Home, Brand } from 'app/shared/layout/header/header-components';
+import { Home, Register, Brand } from 'app/shared/layout/header/header-components';
 import { AdminMenu, EntitiesMenu, AccountMenu, LocaleMenu } from 'app/shared/layout/menus';
 import Header from 'app/shared/layout/header/header';
 
@@ -62,6 +62,7 @@ describe('Header', () => {
     expect(navbar.find(Brand).length).toEqual(1);
     const nav = component.find(Nav);
     expect(nav.length).toEqual(1);
+    expect(nav.find(Register).length).toEqual(1);
     expect(nav.find(Home).length).toEqual(1);
     expect(nav.find(AdminMenu).length).toEqual(1);
     expect(nav.find(EntitiesMenu).length).toEqual(1);
@@ -81,6 +82,7 @@ describe('Header', () => {
     expect(navbar.find(Brand).length).toEqual(1);
     const nav = component.find(Nav);
     expect(nav.length).toEqual(1);
+    expect(nav.find(Register).length).toEqual(1);
     expect(nav.find(Home).length).toEqual(1);
     expect(nav.find(AdminMenu).length).toEqual(1);
     expect(nav.find(EntitiesMenu).length).toEqual(1);

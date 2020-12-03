@@ -37,7 +37,7 @@ public class UserServiceIT {
 
     private static final String DEFAULT_EMAIL = "johndoe@localhost";
 
-    private static final String DEFAULT_FIRSTNAME = "john";
+    private static final String DEFAULT_FIRSTNAME = "Ali";
 
     private static final String DEFAULT_LASTNAME = "doe";
 
